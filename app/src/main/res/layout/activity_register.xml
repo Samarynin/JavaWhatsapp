@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/name"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:hint="Email"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text"
+            android:textColorHint="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:hint="Пароль"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text"
+            android:textColorHint="@android:color/black"/>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/changeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт, войти."
+        android:textSize="20sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

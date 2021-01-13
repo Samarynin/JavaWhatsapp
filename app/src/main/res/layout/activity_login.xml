@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите свой номер телефона"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WhatsApp отправит SMS-сообщение, чтобы подтвердить Ваш номер телефона."
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/login_phone_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv1"
+        android:hint="номер телефона"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мобильный оператор может взимать плату за SMS"
+        android:layout_below="@+id/login_phone_input"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:padding="20dp"
+        />
+
+    <Button
+        android:id="@+id/login_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/login_verification_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv1"
+        android:hint="Введите код подтверждения"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/login_verification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        android:layout_below="@+id/tv2"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Регистрация с email"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+
+
+</RelativeLayout>

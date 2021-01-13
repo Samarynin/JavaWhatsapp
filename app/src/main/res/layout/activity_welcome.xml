@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать в WhatsApp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/wa_1"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/agree_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="ПРИНЯТЬ И ПРОДОЛЖИТЬ"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажмите принять и продолжить, чтобы согласиться с"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/privacy"
+        />
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Правилами пользования и Политикой конфиденциальности"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/agree_button"
+
+        />
+</RelativeLayout>
